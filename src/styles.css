@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Poppins:wght@100;300;400;500;600;700&family=Work+Sans&display=swap');
+
+:root {
+  --dark-blue: #16507b;
+  --light-blue: #57acf1;
+  --blue: #124265;
+  --font: #333;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+.h-container {
+  min-height: 8vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo h2{
+  color: var(--dark-blue);
+  font-weight: 300;
+  font-size: 28px;
+}
+
+nav .nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-list li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0px 15px;
+}
+
+#contato {
+  padding-right: 18px;
+}
+
+.nav-list li a {
+  font-size: 15px;
+  color: var(--font);
+  text-decoration: none;
+}
+
+.nav-list li a:hover {
+  opacity: 0.7;
+}
+
+.nav-list button {
+  background-color: var(--light-blue);
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.principal-section {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.principal-section h2 {
+  color: var(--blue);
+  font-size: 50px;
+}
+
+.principal-section p {
+  color: var(--font);
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.principal-section button {
+  margin: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 0;
+  background-color: var(--light-blue);
+  color: #fff;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.section-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1, .card2, .card3 {
+  background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+  padding: 35px;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  height: 300px;
+  width: 280px;
+  border-radius: 10px;
+}
+
+.card1 i, .card2 i, .card3 i {
+  color: var(--light-blue);
+  font-size: 30px;
+}
+
+.card1 h2, .card2 h2, .card3 h2 {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card1 p, .card2 p, .card3 p {
+  color: var(--font);
+  font-size: 15px;
+}
+
+.container-about-us {
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+.about-us {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+  font-weight: 500;
+}
+
+.about-us p {
+  color: var(--font);
+  padding-top: 10px;
+}
+
+.desc {
+  display: flex;
+  gap: 5rem;
+}
+
+.p-left {
+  font-size: 14px;
+  width: 50%;
+}
+
+.p-right {
+  font-size: 14px;
+  width: 50%;
+}
+
+.p-right button {
+  border: none;
+  background-color: var(--light-blue);
+  padding: 5px;
+  margin-top: 5px;
+  color: #000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.infos {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.info1, .info2, .info3 {
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info1 h2, .info2 h2, .info3 h2 {
+  color: var(--blue);
+  font-size: 35px;
+  font-weight: 400;
+}
+
+.info1 p, .info2 p, .info3 p {
+  color: var(--font);
+}
+
+footer {
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-logo h2 {
+  color: var(--font);
+}
+
+.f-navigation {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.f-navigation ul {
+  list-style: none;
+}
+
+.f-navigation ul li {
+  color: var(--font);
+  font-weight: 600;
+}
+
+.f-navigation ul li a {
+  text-decoration: none;
+  color: var(--font);
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.start button {
+  border: none;
+  background: transparent;
+}
+
+.start button i {
+  width: 50px;
+  height: 35px;
+  color: var(--font);
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.start button p {
+  color: var(--font);
+  font-size: 14px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+
+  .section-cards {
+    flex-wrap: wrap;
+  }
+
+  .principal-section {
+    height: 30vh;
+  }
+
+  .card1, .card2, .card3 {
+    width: 400px;
+  }
+
+  .desc {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .desc .p-left {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .desc .p-right {
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .p-right button {
+    margin-top: 1rem;
+  }
+
+  .container-about-us {
+    gap: 1.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+}
+
+@media screen and (max-width: 715px) {
+  
+  .info1, .info2, .info3 {
+    padding: 0 1rem;
+  }
+
+}
+
+@media screen and (max-width: 570px) {
+
+  .h-nav {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .mobile-menu i {
+    color: var(--font);
+    font-size: 20px;
+  }
+
+  .mobile-menu button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    padding: 5px;
+  }
+
+  .info1 h2, .info2 h2, .info3 h2 {
+    font-size: 25px;
+  }
+
+  .info1 p, .info2 p, .info3 p {
+    font-size: 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2.5rem;
+    gap: 2rem;
+  }
+
+  .container-about-us {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+
+}
+
+@media screen and (max-width: 490px) {
+
+  .logo h2{
+    font-size: 24px;
+  }
+
+  .principal-section h2 {
+    font-size: 35px;
+  }
+
+  .principal-section p {
+    font-size: 15px;
+  }
+
+  .principal-section button {
+    padding: 5px 10px;
+  }
+
+  .card1, .card2, .card3 {
+    width: 325px;
+  }
+
+  .info1 h2, .info2 h2, .info3 h2 {
+    font-size: 20px;
+  }
+
+  .info1 p, .info2 p, .info3 p {
+    font-size: 12px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
